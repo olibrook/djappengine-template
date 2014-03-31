@@ -1,14 +1,14 @@
-# {{ project_name }} Readme
+# {{ cookiecutter.project_name }} Readme
 
-{{ project_name }} was generated using djappengine-template.
+{{ cookiecutter.project_name }} was generated using djappengine-template.
 
 
 ## Getting started
 
 1. Create a virtualenv with python 2.7:
 
-    mkvirtualenv {{ project_name }}
-    workon {{ project_name }}
+    mkvirtualenv {{ cookiecutter.project_name }}
+    workon {{ cookiecutter.project_name }}
     pip install Pillow
 
 2. Run buildout:

@@ -15,9 +15,9 @@ ON_PRODUCTION_SERVER = 'google' in os.environ.get('SERVER_SOFTWARE', '').lower()
 
 def get_settings_name():
     if ON_PRODUCTION_SERVER:
-        return '{{ project_name }}.settings.live'
+        return '{{ cookiecutter.project_name }}.settings.live'
     else:
-        return '{{ project_name }}.settings.dev'
+        return '{{ cookiecutter.project_name }}.settings.dev'
 
 
 def django_setup_teardown(f):
