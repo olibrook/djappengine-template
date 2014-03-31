@@ -1,4 +1,4 @@
-djappengine-template
-====================
+{{ project_name }} Readme
+=========================
 
-Template files for a djappengine (django and App Engine) project 
+{{ project_name }} was generated using djappengine-template.
