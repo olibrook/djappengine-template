@@ -5,21 +5,30 @@
 
 ## Getting started
 
-1. Create a virtualenv with python 2.7:
+1. Create a virtualenv with python 2.7, if you don't already have one:
 
-    mkvirtualenv {{ cookiecutter.project_name }}
-    workon {{ cookiecutter.project_name }}
-    pip install Pillow
+        mkvirtualenv {{ cookiecutter.project_name }}
+        workon {{ cookiecutter.project_name }}
+        pip install Pillow
 
 2. Run buildout:
 
-    python bootstrap.py
-    ./bin/buildout
+        python bootstrap.py
+        ./bin/buildout
 
 3. Generate a SECRET_KEY for the app and update your settings:
 
-    ./bin/manage.py gen_secret
+        ./bin/manage.py gen_secret
 
 4. Run the app:
 
-    ./bin/dev_appserver appengine
+        ./bin/dev_appserver appengine
+
+
+## Running tests:
+
+        ./bin/manage.py test
+
+## Deploying:
+
+        ./bin/appcfg update appengine
