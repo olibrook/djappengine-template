@@ -16,7 +16,10 @@
     python bootstrap.py
     ./bin/buildout
 
-3. Run the app:
+3. Generate a SECRET_KEY for the app and update your settings:
 
-    python bootstrap.py
+    ./bin/manage.py gen_secret
+
+4. Run the app:
+
     ./bin/dev_appserver appengine
